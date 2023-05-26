@@ -11,40 +11,54 @@
 
 <body>
     <div class="wrapper">
+        <a href="#maincontent">Skip To Content &darr;</a>
         <header role="banner">
             <h1>Reviews!</h1>
-            <nav class="topnav">
+            <nav class="topnav" role="navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-        <header>
-        <main>
-            <section>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ea excepturi architecto esse, earum
-                    ullam optio itaque iure. Numquam placeat exercitationem voluptas veniam beatae ducimus, facere atque
-                    blanditiis id dolores?</p>
-            </section>
-            <section>
-                <p>Sequi ipsam excepturi eius voluptates reprehenderit eaque a similique, doloribus, quis aliquid quas
-                    fugiat maiores suscipit rem, iure laboriosam numquam? Iusto vel cupiditate, neque qui laudantium
-                    dolores sint voluptatem molestias?</p>
-            </section>
-        <main>
-        <aside>
-            <h2>Movie Title</h2>
-            <img src="https://picsum.photos/200/300/" alt="Movie Poster">
-            <ul class="review">
-                <li>Movie Title</li>
-                <li>Movie Direct</li>
-                <li>Run Time</li>
-            </ul>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, modi. Veritatis eius ipsa quaerat cumque harum ad. Esse, eligendi. Qui voluptatum perferendis voluptatibus itaque. Labore, consequatur molestiae? Vel, dolorem enim!
-            </p>
-        <aside>
+            <header>
+                <main role="main" id="maincontent">
+                    <section role="region">
+                        <h2>
+                            Welcome
+                        </h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ea excepturi architecto
+                            esse, earum
+                            ullam optio itaque iure. Numquam placeat exercitationem voluptas veniam beatae ducimus,
+                            facere atque
+                            blanditiis id dolores?</p>
+                    </section>
+                    <section role="region">
+                        <h2>About Us</h2>
+                        <p>Sequi ipsam excepturi eius voluptates reprehenderit eaque a similique, doloribus, quis
+                            aliquid quas
+                            fugiat maiores suscipit rem, iure laboriosam numquam? Iusto vel cupiditate, neque qui
+                            laudantium
+                            dolores sint voluptatem molestias?</p>
+                    </section>
+                </main>
+                <aside role="complementary">
+                    <h2>Movie Title</h2>
+                    <img src="https://picsum.photos/200/300/" alt="Movie Poster" role="img" aria-details="moviereview">
+                    <ul itemscope itemtype="https://schema.org/Movie" class="review" role="list">
+                        <li itemprop="name">Movie Title</li>
+                        <li itemprop="director">Movie Direct</li>
+                        <li itemprop="duration">Run Time</li>
+                    </ul>
+                    <p id="moviereview">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, modi. Veritatis eius
+                        ipsa quaerat cumque harum ad. Esse, eligendi. Qui voluptatum perferendis voluptatibus
+                        itaque. Labore, consequatur molestiae? Vel, dolorem enim!
+                    </p>
+                    <aside>
+                        <footer role="contentinfo">
+                            <p> Copyright &copy; 2023 </p>
+                        </footer>
     </div>
 </body>
 
